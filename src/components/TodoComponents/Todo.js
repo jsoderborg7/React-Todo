@@ -2,11 +2,10 @@ import React from 'react';
 
 const Todo = props =>{
   return(
-    <div>
-      <h3>Todo Tasks</h3>
-      <div>{props.task}</div>
-  </div>
-  )
+    <div className={`task${props.task.completed ? "-done" : ""}`} onClick={() => props.toggleTask(props.task.id)}>
+      {props.task.task}
+    </div>
+  );
 };
 
 export default Todo;
