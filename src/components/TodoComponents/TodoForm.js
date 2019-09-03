@@ -61,6 +61,11 @@ const StyledTodoForm = styled.div `
   justify-content: space-evenly;
   margin: 3%;
 
+  @media screen and (max-width: 500px){
+    flex-direction: column;
+    align-items: center;
+    }
+
   button{
     border-radius: 10px;
     padding: 3%;
@@ -69,6 +74,12 @@ const StyledTodoForm = styled.div `
     border: none;
     box-shadow: 0 0 2px 2px;
     color: white;
+
+    @media screen and (max-width: 500px){
+      width: 50%;
+      margin-top: 5%;
+
+    }
   }
 
   button:hover{
