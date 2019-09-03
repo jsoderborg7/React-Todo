@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
       <StyledApp>
-        <div>
+        <div className="app">
           <h2>What should I do today?</h2>
           <TodoList tasks={this.state.tasks} toggleTask={this.toggleTask} />
           <TodoForm addTask={this.addTask} updateTodo={this.updateTodo} clearComplete={this.clearComplete} />
@@ -69,7 +69,7 @@ const StyledApp = styled.div `
   opacity: .9;
   border-radius: 10px;
   box-shadow: 0 0 10px 10px;
-  margin-top: 5%;
+  margin-top: 10%;
 
   @media screen and (max-width: 500px){
     width: 90%;
