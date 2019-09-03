@@ -71,6 +71,11 @@ const StyledApp = styled.div `
   box-shadow: 0 0 10px 10px;
   margin-top: 5%;
 
+  @media screen and (max-width: 500px){
+    width: 90%;
+    }
+  }
+
   h2{
     font-size: 3rem;
     text-align: center;
@@ -78,6 +83,10 @@ const StyledApp = styled.div `
     margin-top: 0;
     color: white;
     text-shadow: 2px 2px #583c75;
+
+    @media screen and (max-width: 500px){
+      font-size: 2rem;
+      }
   }
   
 `;
